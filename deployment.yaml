@@ -15,9 +15,9 @@ spec:
     spec:
       containers:
         - name: spring-boot-k8s
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          image: yildirim7mustafa/devops-integration:v2.5
 # Image that will be used to containers in the cluster
-          imagePullPolicy: "{{ .Values.image.pullPolicy }}"
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8081 
 # The port that the container is running on in the cluster

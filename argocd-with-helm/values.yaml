@@ -1,9 +1,0 @@
-service: 
-  type: NodePort
-  port: 8080
-  targetPort: 8081
-
-image:
-  pullPolicy: IfNotPresent
-  repository: yildirim7mustafa/devops-integration
-  tag: "latest"
