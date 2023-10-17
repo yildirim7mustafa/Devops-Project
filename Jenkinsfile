@@ -18,7 +18,7 @@ pipeline {
         }
         stage("Build docker image"){
             steps{
-                 sh 'docker build -t yildirim7mustafa/devops-integration:v8 .'
+                 sh 'docker build -t yildirim7mustafa/devops-integration:latest .'
             }
         }
         stage('Login') {
@@ -29,7 +29,7 @@ pipeline {
     }
         stage('Push') {
       steps {
-        sh 'docker push yildirim7mustafa/devops-integration:v8'
+        sh 'docker push yildirim7mustafa/devops-integration:latest'
       }
     }
     }
