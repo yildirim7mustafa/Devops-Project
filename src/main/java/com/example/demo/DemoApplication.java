@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoApplication {
 
 	@GetMapping
-	public String message() {return "yoruldum 3"; }
+	public String message() {return "Lorem v1"; }
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
