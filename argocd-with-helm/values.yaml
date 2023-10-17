@@ -6,4 +6,4 @@ service:
 image:
   pullPolicy: IfNotPresent
   repository: yildirim7mustafa/devops-integration
-  tag: "latest"
+  tag: "v3"
