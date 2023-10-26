@@ -32,6 +32,13 @@ pipeline {
         sh 'docker push yildirim7mustafa/devops-integration:v33'
       }
     }
+
+        stage('deploy') {
+      steps {
+        sh 'kubectl rollout restart deployment/spring-boot-k8s -n spring-boot-test'
+      }
+    }
+        
     }
       post {
         always {
